@@ -1,4 +1,7 @@
+import { colors } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+
+const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -16,7 +19,23 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             display: 'none'
         }
+    },
+    drawer: {
+        [theme.breakpoints.up('sm')]: {
+            width: drawerWidth,
+            flexShrink: 0,
+        }
+    },
+    drawerPaper: {
+        width: drawerWidth
+    },
+    linkButton: {
+        '&:hover': {
+            color: 'white !important',
+            textDecoration: 'none'
+        }
     }
+
 }));
 
 
