@@ -1,4 +1,3 @@
-import { colors } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const drawerWidth = 240;
